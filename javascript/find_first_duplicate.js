@@ -1,5 +1,14 @@
 function findFirstDuplicate(arr) {
-  // type your code here
+  let uniqueNum = []
+
+  for (i of arr) {
+    if (uniqueNum.includes(i)) {
+      return i
+    }
+
+    uniqueNum.push(i)
+  }
+  return -1
 }
 
 if (require.main === module) {
@@ -17,3 +26,8 @@ module.exports = findFirstDuplicate;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// Map over arr
+// declare 
+// for (iteration of arr)
+// 
